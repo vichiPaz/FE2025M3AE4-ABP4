@@ -9,6 +9,13 @@
   <body>
     <header class="header">
       <h1 class="header__title">My Company</h1>
+      <nav class="header__nav">
+        <ul class="header__nav--list">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./catalog.html">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main class="container">
       <div class="container__content">
@@ -21,6 +28,22 @@
         <button class="buttons__primary">Primary Button</button>
         <button class="buttons__secondary">Secondary Button</button>
       </div>
+      <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact__form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <label for="subscribe">
+            <input type="checkbox" id="subscribe" name="subscribe" />
+            Subscribe to newsletter
+          </label>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
     </main>
     <footer class="footer">
       <p>&copy; 2025 My Company</p>

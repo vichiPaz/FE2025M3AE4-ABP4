@@ -20,6 +20,8 @@ body {
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
   background-color: #7b9f19;
   color: white;
   padding: 10px;
@@ -30,6 +32,35 @@ body {
 .header__title {
   font-size: 24px;
   font-weight: bold;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.header__nav--list {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+.header__nav--list li a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  font-weight: 300;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+.header__nav--list li a:hover {
+  color: #3d4d02;
 }
 
 .container {
