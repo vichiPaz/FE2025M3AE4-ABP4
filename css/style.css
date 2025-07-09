@@ -135,15 +135,13 @@ body {
   border-radius: 35%;
   cursor: pointer;
   font-size: 16px;
-  border: 1px solid #ebe6d6;
   transition: background-color 0.3s ease;
   width: 100%;
 }
 
 .buttons__secondary:hover {
-  background-color: #3d4d02;
+  background-color: #7e981f;
   color: #ebe6d6;
-  border: 1px solid #3d4d02;
 }
 
 .contact {
