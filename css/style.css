@@ -12,8 +12,8 @@ body {
 }
 
 body {
-  background-color: #dbe9b9;
-  color: #3d4d02;
+  background-color: #ebe6d8;
+  color: #3a311a;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -22,17 +22,20 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: #7b9f19;
-  color: white;
-  padding: 10px;
+  background-color: rgba(46, 33, 29, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #f7f3ee;
+  padding: 8px;
   text-align: center;
   width: 100%;
   position: fixed;
+  align-items: center;
 }
 
 .header__title {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 48px;
+  font-weight: 800;
 }
 
 .header__nav {
@@ -47,21 +50,22 @@ body {
   display: flex;
   gap: 24px;
   list-style: none;
-  color: white;
+  color: #ebe6d6;
   text-decoration: none;
 }
 
 .header__nav--list li a {
   text-decoration: none;
   list-style: none;
-  color: white;
+  color: #ebe6d6;
   font-weight: 300;
   font-size: 16px;
   transition: color 0.3s ease-in-out;
 }
 
 .header__nav--list li a:hover {
-  color: #3d4d02;
+  color: #7e981f;
+  text-decoration: underline;
 }
 
 .container {
@@ -72,17 +76,24 @@ body {
   justify-content: center;
   width: 80%;
   margin: auto;
-  background-color: #dbe9b9;
   gap: 48px;
-  padding: 48px;
+}
+
+.container__image {
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 2rem;
+  object-fit: cover;
 }
 
 .container__content {
-  background-color: white;
+  background-color: #f7f3ee;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-  border: 1px solid #cadf97;
+  border: 1px solid #ebe6d8;
   text-align: center;
   width: 100%;
 }
@@ -97,19 +108,9 @@ body {
   margin-bottom: 20px;
 }
 
-.buttons {
-  display: flex;
-  gap: 16px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
 .buttons__primary {
-  background-color: #a8ca30;
-  color: #263001;
+  background-color: #645732;
+  color: #ebe6d8;
   padding: 12px 16px;
   border: none;
   border-radius: 4px;
@@ -127,24 +128,22 @@ body {
 }
 
 .buttons__secondary {
-  background-color: #f7ffdb;
-  color: #676c57;
-  padding: 11px 31px;
+  background-color: #ebe6d6;
+  color: #645732;
+  padding: 12px 12px;
   border: none;
-  border-radius: 4px;
+  border-radius: 35%;
   cursor: pointer;
   font-size: 16px;
-  border: 1px solid #a8ca30;
+  border: 1px solid #ebe6d6;
   transition: background-color 0.3s ease;
   width: 100%;
-  max-width: 240px;
-  height: 45px;
 }
 
 .buttons__secondary:hover {
   background-color: #3d4d02;
-  color: white;
-  border: none;
+  color: #ebe6d6;
+  border: 1px solid #3d4d02;
 }
 
 .contact {
@@ -164,7 +163,6 @@ body {
 .contact__form {
   display: flex;
   flex-direction: column;
-  gap: 8px;
   width: 100%;
   max-width: 400px;
   justify-content: center;
@@ -172,10 +170,15 @@ body {
   padding-top: 32px;
 }
 
+.contact__form--top {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
 .contact__form--input {
   padding: 12px;
-  border: 1px solid #cadf97;
-  border-radius: 4px;
+  border: 1px solid #f7f3ee;
   font-size: 16px;
   width: 100%;
 }
@@ -198,30 +201,35 @@ body {
 
 .footer {
   display: flex;
-  gap: auto;
   justify-content: space-between;
   align-items: center;
-  background-color: #7b9f19;
-  color: white;
-  text-align: center;
+  border-top: 1px solid #645732;
+  color: #645732;
   padding: 48px;
   width: 100%;
 }
 
 .footer__social {
+  display: flex;
+  flex-direction: row;
   gap: 16px;
   align-items: center;
   list-style: none;
-  color: white;
 }
+
+.footer__social li {
+  height: 20px;
+  width: 20px;
+}
+
 .footer__social a {
-  font-size: 1.5rem;
+  font-size: 24px;
   text-decoration: none;
-  color: #fff;
+  color: #645732;
 }
 
 .footer__social a:hover {
-  color: #0ce825;
+  color: #7e981f;
 }
 
 @media (min-width: 768px) {
@@ -261,7 +269,9 @@ body {
 
 @media (min-width: 1024px) {
   .container {
-    width: 60%;
+    width: 80%;
+    margin-top: 0;
+    padding: 140px;
   }
 
   .container__content {

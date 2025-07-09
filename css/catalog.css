@@ -2,7 +2,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 56px 0 0 0;
   padding: 48px 25%;
 }
 
@@ -36,12 +36,17 @@
 
 .breadcrumbs__link,
 .breadcrumbs p {
-  color: #3d4d02;
+  color: #718a17;
   text-decoration: none;
 }
 
+.breadcrumbs__link:hover {
+  color: #3d4d02;
+  text-decoration: underline;
+}
+
 .breadcrumbs__link--current {
-  color: #171212;
+  color: #3d4d02;
   pointer-events: none;
   cursor: default;
 }
