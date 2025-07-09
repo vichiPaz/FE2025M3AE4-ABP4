@@ -65,11 +65,14 @@
   gap: 8px;
   align-self: stretch;
   overflow: hidden;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .product__gallery--card:hover {
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .product__gallery--picture {

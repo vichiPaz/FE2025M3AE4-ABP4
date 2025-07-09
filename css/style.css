@@ -27,6 +27,7 @@ body {
   padding: 10px;
   text-align: center;
   width: 100%;
+  position: fixed;
 }
 
 .header__title {
@@ -146,14 +147,81 @@ body {
   border: none;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.contact__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  max-width: 400px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 32px;
+}
+
+.contact__form--input {
+  padding: 12px;
+  border: 1px solid #cadf97;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.contact__form--label {
+  display: flex;
+  font-size: 16px;
+  margin-bottom: 4px;
+  align-items: start;
+}
+
+.contact__form--checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 12px;
+}
+
 .footer {
+  display: flex;
+  gap: auto;
+  justify-content: space-between;
+  align-items: center;
   background-color: #7b9f19;
   color: white;
   text-align: center;
-  padding: 20px;
-  margin-top: 50px;
+  padding: 48px;
   width: 100%;
-  height: 100px;
+}
+
+.footer__social {
+  gap: 16px;
+  align-items: center;
+  list-style: none;
+  color: white;
+}
+.footer__social a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__social a:hover {
+  color: #0ce825;
 }
 
 @media (min-width: 768px) {
@@ -184,6 +252,10 @@ body {
   .buttons__secondary {
     font-size: 20px;
     height: auto;
+  }
+
+  .contact {
+    padding: 72px;
   }
 }
 

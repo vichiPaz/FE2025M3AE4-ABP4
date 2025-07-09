@@ -31,22 +31,69 @@
       <section class="contact" id="contact">
         <h2>Contact Us</h2>
         <form class="contact__form">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-          <label for="subscribe">
-            <input type="checkbox" id="subscribe" name="subscribe" />
-            Subscribe to newsletter
-          </label>
-          <button type="submit">Submit</button>
+          <input
+            class="contact__form--input"
+            type="text"
+            id="name"
+            placeholder="Name*"
+            name="name"
+            required
+          />
+          <input
+            class="contact__form--input"
+            type="email"
+            id="email"
+            placeholder="E-mail*"
+            name="email"
+            required
+          />
+          <textarea
+            class="contact__form--input"
+            id="message"
+            name="message"
+            placeholder="Give us a message"
+            rows="4"
+            required
+          ></textarea>
+          <div class="contact__form--checkbox">
+            <label class="contact__form--label" for="newsletter">
+              Subscribe to newsletter
+            </label>
+            <input type="checkbox" id="newsletter" name="newsletter" />
+          </div>
+          <button type="submit" class="buttons__primary">Submit</button>
         </form>
       </section>
     </main>
     <footer class="footer">
       <p>&copy; 2025 My Company</p>
+      <ul class="footer__social">
+        <li>
+          <a
+            href="https://www.instagram.com/"
+            blank="_blank"
+            rel="noopener noreferrer"
+            title="Instagram"
+            aria-label="Instagram"
+            ><i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://facebook.com/"
+            blank="_blank"
+            rel="noopener noreferrer"
+            title="Facebook"
+            aria-label="Facebook"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
